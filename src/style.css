@@ -1,0 +1,244 @@
+/*Done by Nahian36*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    background-color: #c03444;
+    width: 100%;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.23);
+    z-index: 1;
+}
+
+#links{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+#links>a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 25px 25px;
+}
+
+#links>a:hover{
+    background-color: #48547c;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #282424;
+    background: linear-gradient(90deg, #34343c, #201c1c);
+    height: 100vh;
+    line-height: 0;
+}
+
+#welcome-section>h1{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+#welcome-section>p{
+    color: #b03042;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#projects{
+    display: flex;
+    background-color: #48547c;
+    justify-content: center;
+    position: relative;
+    padding: 30px 30px 250px 30px;
+}
+
+#projects>h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid white;
+    height: fit-content;
+    position: absolute;
+}
+
+.project-tile{
+    margin-top: 230px;
+    width: 100%;   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 60px;
+}
+
+.project-tile a{
+    position: relative;
+    display: grid;
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+}
+
+#projects img{
+    width: 100%;
+    height: calc(100vw/3.8);
+}
+/*Done by Nahian36*/
+#desc{
+    background-color: #383c44;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+}
+
+#desc arrow{
+    color: #383c44;
+}
+
+#desc text{
+    color: white;
+    
+}
+
+.project-tile a:hover #desc arrow{
+    transition: 1s;
+    color: orange;
+}
+
+#show{
+    position: absolute;
+    background-color: #383c44;
+    margin-top: 1320px;
+    border-radius: 2px;
+    font-size: 27px;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+#show>i{
+    margin-left: 4px;
+}
+
+#show:hover{
+    animation-name: ani;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
+
+#show:hover i{
+    transition: 1s;
+    margin-left: 8px;
+    margin-right: -6px;
+}
+  
+@keyframes ani {
+    100% {
+        background-color: #c03444;
+    }
+}
+
+#profile-links{
+    width: 100%;
+    position: absolute;
+    padding-top: 150px;
+    margin: 0;
+    background-color: #383c44;
+    color: white;
+}
+
+#profile-links h1{
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+#profile-links>p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+#social{
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 144px;
+    border-bottom: 8px solid #c03444;
+}
+
+#social a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#social i{
+    transform: scale(2);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.23);
+}
+
+#social p{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.23);
+    margin-top: -27px;
+    margin-left: 30px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+/*Done by Nahian36*/
+#social a:hover{
+    animation-name: media;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+}
+  
+@keyframes media {
+    100% {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+}
+
+#copyright{
+    background-color: #383c44;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 70px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    gap: 460px;
+}
+
+#copyright #item2 a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 1088px){
+    #social{
+        flex-direction: column;
+    }
+}
+/*Done by Nahian36*/
